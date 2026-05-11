@@ -273,8 +273,6 @@ function placeOrder(){
         JSON.stringify(customer)
     );
 
-    localStorage.removeItem("cart");
-
     window.location.href = "success.html";
 }
 function loadCustomerDetails(){
@@ -349,3 +347,48 @@ function updateCheckoutTotal(){
 }
 
 updateCheckoutTotal();
+function loadSuccessSummary(){
+
+    const summaryContainer =
+        document.getElementById("success-summary");
+
+    const totalText =
+        document.getElementById("success-total");
+
+    if(!summaryContainer || !totalText) return;
+
+    const cart =
+        JSON.parse(localStorage.getItem("cart")) || [];
+
+    let total = 0;
+
+    summaryContainer.innerHTML = "";
+
+    cart.forEach((item) => {
+
+        total += item.price;
+
+        summaryContainer.innerHTML += `
+
+        <div class="summary-item">
+
+            <span>${item.name}</span>
+
+            <span>₱${item.price}</span>
+
+        </div>
+
+        `;
+    });
+
+    totalText.innerHTML = `₱${total + 45}`;
+}
+
+loadSuccessSummary();
+
+function finishOrder(){
+
+    localStorage.removeItem("cart");
+
+    goToPage('index.html');
+}
