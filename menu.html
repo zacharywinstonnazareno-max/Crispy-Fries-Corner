@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu - Crispy Fries Corner</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" class="logo">
+            <h1>CRISPY FRIES CORNER</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html" class="active">MENU</a></li>
+            <li><a href="cart.html">YOUR CART</a></li>
+        </ul>
+
+    </nav>
+
+
+    <section class="featured-section">
+
+        <h2>OUR MENU</h2>
+
+        <div class="featured-container">
+            
+<div class="order-summary">
+
+    <h2>Your Order</h2>
+
+    <div id="summary-items">
+
+        <p class="empty-text">
+            No items added yet.
+        </p>
+
+    </div>
+
+    <h3 id="summary-total">
+        Total: ₱0
+    </h3>
+
+   <a href="#" class="order-btn"
+onclick="goToPage('cart.html')">
+        VIEW YOUR ORDER
+    </a>
+
+</div>
+
+            <div class="featured-card">
+
+    <img src="images/small-fries.png" alt="Small Fries">
+
+    <h3>Small Fries</h3>
+
+    <p>₱65</p>
+
+    <div class="options">
+
+        <h4>Choose Drink</h4>
+
+        <label>
+            <input type="radio" name="drink-small" value="Lemon">
+            Lemon
+        </label>
+
+        <label>
+            <input type="radio" name="drink-small" value="Orange">
+            Orange
+        </label>
+
+        <label>
+            <input type="radio" name="drink-small" value="Cola">
+            Cola
+        </label>
+
+        <h4>Choose Flavor</h4>
+
+        <label>
+            <input type="radio" name="flavor-small" value="Cheese">
+            Cheese
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-small" value="Sour Cream">
+            Sour Cream
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-small" value="BBQ">
+            BBQ
+        </label>
+
+    </div>
+
+    <button class="cart-btn"
+    onclick="selectOptions(
+        'Small Fries',
+        65,
+        'images/small-fries.png'
+    )">
+        ADD TO CART
+    </button>
+
+</div>
+
+            <div class="featured-card">
+
+    <img src="images/medium-fries.png" alt="Medium Fries">
+
+    <h3>Medium Fries</h3>
+
+    <p>₱75</p>
+
+    <div class="options">
+
+        <h4>Choose Drink</h4>
+
+        <label>
+            <input type="radio" name="drink-medium" value="Lemon">
+            Lemon
+        </label>
+
+        <label>
+            <input type="radio" name="drink-medium" value="Orange">
+            Orange
+        </label>
+
+        <label>
+            <input type="radio" name="drink-medium" value="Cola">
+            Cola
+        </label>
+
+        <h4>Choose Flavor</h4>
+
+        <label>
+            <input type="radio" name="flavor-medium" value="Cheese">
+            Cheese
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-medium" value="Sour Cream">
+            Sour Cream
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-medium" value="BBQ">
+            BBQ
+        </label>
+
+    </div>
+
+    <button class="cart-btn"
+    onclick="selectOptions(
+        'Medium Fries',
+        75,
+        'images/medium-fries.png'
+    )">
+        ADD TO CART
+    </button>
+
+</div>
+
+
+            <div class="featured-card">
+
+    <img src="images/jumbo-fries.png" alt="Jumbo Fries">
+
+    <h3>Jumbo Fries</h3>
+
+    <p>₱100</p>
+
+    <div class="options">
+
+        <h4>Choose Drink</h4>
+
+        <label>
+            <input type="radio" name="drink-jumbo" value="Lemon">
+            Lemon
+        </label>
+
+        <label>
+            <input type="radio" name="drink-jumbo" value="Orange">
+            Orange
+        </label>
+
+        <label>
+            <input type="radio" name="drink-jumbo" value="Cola">
+            Cola
+        </label>
+
+        <h4>Choose Flavor</h4>
+
+        <label>
+            <input type="radio" name="flavor-jumbo" value="Cheese">
+            Cheese
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-jumbo" value="Sour Cream">
+            Sour Cream
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-jumbo" value="BBQ">
+            BBQ
+        </label>
+
+    </div>
+
+    <button class="cart-btn"
+    onclick="selectOptions(
+        'Jumbo Fries',
+        100,
+        'images/jumbo-fries.png'
+    )">
+        ADD TO CART
+    </button>
+
+</div>
+
+
+            <div class="featured-card">
+
+    <img src="images/mega-fries.png" alt="Mega Fries">
+
+    <h3>Mega Fries</h3>
+
+    <p>₱130</p>
+
+    <div class="options">
+
+        <h4>Choose Drink</h4>
+
+        <label>
+            <input type="radio" name="drink-mega" value="Lemon">
+            Lemon
+        </label>
+
+        <label>
+            <input type="radio" name="drink-mega" value="Orange">
+            Orange
+        </label>
+
+        <label>
+            <input type="radio" name="drink-mega" value="Cola">
+            Cola
+        </label>
+
+        <h4>Choose Flavor</h4>
+
+        <label>
+            <input type="radio" name="flavor-mega" value="Cheese">
+            Cheese
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-mega" value="Sour Cream">
+            Sour Cream
+        </label>
+
+        <label>
+            <input type="radio" name="flavor-mega" value="BBQ">
+            BBQ
+        </label>
+
+    </div>
+
+    <button class="cart-btn"
+    onclick="selectOptions(
+        'Mega Fries',
+        130,
+        'images/mega-fries.png'
+    )">
+        ADD TO CART
+    </button>
+
+</div>
+    </section>
+
+    <section class="order-section1">
+
+        <h2>Order Now</h2>
+
+        <p>
+            Call or Message us to place your order
+        </p>
+
+        <h3>+63 935-657-4723</h3>
+
+        <button class="message-btn">
+            SEND MESSAGE
+        </button>
+
+    </section>
+
+    <div id="toast-notification" class="toast">
+    Added to cart!
+    </div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

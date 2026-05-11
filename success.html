@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Successful</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" class="logo">
+            <h1>CRISPY FRIES CORNER</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="cart.html">YOUR CART</a></li>
+        </ul>
+
+    </nav>
+
+<section class="success-wrapper">
+
+    <div class="success-left">
+
+        <img src="images/success.png" class="success-image">
+
+        <h2>Order Successfully Placed!</h2>
+
+        <p>
+            Thank you! Your fries are being prepared.
+        </p>
+
+        <p>
+            You will receive your order soon 🍟
+        </p>
+
+        <div class="delivery-box">
+            <h3>Estimated Delivery Time</h3>
+            <p>15 - 20 Minutes</p>
+        </div>
+
+        <img src="images/logo.png" class="success-logo">
+
+        <a href="#" class="back-btn"
+onclick="goToPage('index.html')">
+            BACK TO MENU
+        </a>
+
+    </div>
+
+
+    <div class="success-right">
+
+        <div class="summary-card">
+
+            <h3>Order Summary</h3>
+
+            <div class="summary-item">
+                <span>Small Fries</span>
+                <span>₱65</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Medium Fries</span>
+                <span>₱75</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Jumbo Fries</span>
+                <span>₱100</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Mega Fries</span>
+                <span>₱130</span>
+            </div>
+
+            <hr>    
+
+            <div class="summary-item">
+                <span>Delivery Fee</span>
+                <span>₱30</span>
+            </div>
+
+            <div class="summary-item">
+                <span>Service Fee</span>
+                <span>₱15</span>
+            </div>
+
+            <hr>
+
+            <div class="summary-item total">
+                <span>Total</span>
+                <span>₱415</span>
+            </div>
+
+        </div>
+
+
+        <div class="details-card">
+
+            <h3>Delivery Details</h3>
+
+            <p id="customer-name"></p>
+
+            <p id="customer-address"></p>
+
+            <p id="customer-number"></p>
+
+            <hr>
+
+            <h3>Payment Method</h3>
+
+            <p>💵 Cash on Delivery</p>
+
+        </div>
+
+
+        <div class="tracking-card">
+
+            <h3>Track Your Order</h3>
+
+            <div class="tracking-steps">
+
+                <div class="step active">
+                    ✅
+                    <p>Placed</p>
+                </div>
+
+                <div class="step active">
+                    🍟
+                    <p>Preparing</p>
+                </div>
+
+                <div class="step">
+                    🛵
+                    <p>Out for Delivery</p>
+                </div>
+
+                <div class="step">
+                    📦
+                    <p>Delivered</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+   
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

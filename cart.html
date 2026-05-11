@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Your Cart</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" class="logo">
+            <h1>CRISPY FRIES CORNER</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="cart.html" class="active">YOUR CART</a></li>
+        </ul>
+
+    </nav>
+
+
+<section class="empty-cart" id="empty-cart">
+
+        <img src="images/empty-cart.png" class="empty-image">
+
+        <h2>Your Cart is Empty</h2>
+
+        <p>
+            Looks like you haven't added any fries yet.
+        </p>
+
+        <a href="#" class="order-btn"
+onclick="goToPage('menu.html')">
+            BROWSE MENU
+        </a>
+
+    </section>
+    
+<section class="cart-section" id="cart-section">
+
+    <h2>Your Orders</h2>
+
+<p class="cart-subtitle">
+    You're just a bite away from happiness 🍟
+</p>
+
+    <div id="cart-items"></div>
+
+    <div class="delivery-info">
+
+    <div class="info-card">
+        🚚 Fast Delivery
+        <span>Right to your doorstep</span>
+    </div>
+
+    <div class="info-card">
+        🔒 Secure Checkout
+        <span>Your order is safe with us</span>
+    </div>
+
+</div>
+    
+    <div class="total-box">
+
+    <h3 id="total-price"></h3>
+
+    <p>We guarantee the best quality fries ❤️</p>
+
+</div>
+
+    <a href="#" class="order-btn"
+onclick="goToPage('checkout.html')">
+        PROCEED TO CHECKOUT
+    </a>
+
+        <div class="order-info-box">
+
+    <h3>Order Summary</h3>
+
+    <div class="info-row">
+        <span>Items:</span>
+        <span id="total-items">0</span>
+    </div>
+
+    <div class="info-row">
+        <span>Delivery Fee:</span>
+        <span>₱40</span>
+    </div>
+
+    <div class="info-row total-row">
+        <span>Grand Total:</span>
+        <span id="grand-total">₱0</span>
+    </div>
+
+</div>
+
+</section>
+
+
+<img src="${item.image}" class="cart-image">
+<script src="js/script.js"></script>
+
+</body>
+</html>

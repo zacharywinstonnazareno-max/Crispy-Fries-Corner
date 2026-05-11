@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo-section">
+            <img src="images/logo.png" class="logo">
+            <h1>CRISPY FRIES CORNER</h1>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="cart.html">YOUR CART</a></li>
+        </ul>
+
+    </nav>
+
+
+    <section class="checkout-section">
+
+    <h2>Checkout Details</h2>
+
+    <div class="checkout-layout">
+
+        <div class="checkout-left">
+
+            <form class="checkout-form">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your full name">
+                </div>
+
+                <div class="input-group">
+                    <label>Address</label>
+                    <input type="text" id="address" placeholder="Enter your address">
+                </div>
+
+                <div class="input-group">
+                    <label>Contact Number</label>
+                    <input type="text" id="number" placeholder="09XXXXXXXXX">
+                </div>
+
+                <div class="payment-box">
+
+                    <h3>Select Payment Method</h3>
+
+                    <label>
+                        <input type="radio" name="payment">
+                        Cash on Delivery
+                    </label>
+
+                    <label class="unavailable-payment">
+                        <input type="radio" disabled>
+                        GCash (Unavailable)
+                    </label>
+
+                    <label class="unavailable-payment">
+                        <input type="radio" disabled>
+                        Credit / Debit Card (Unavailable)
+                    </label>
+
+                </div>
+
+                <button
+                    type="button"
+                    class="place-btn"
+                    onclick="placeOrder()">
+
+                    PLACE ORDER
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="checkout-right">
+
+            <div class="checkout-card">
+
+                <h3>🍟 Order Summary</h3>
+
+                <div class="summary-row">
+                    <span>Items</span>
+                    <span id="total-items">1</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Delivery Fee</span>
+                    <span>₱40</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Grand Total</span>
+                    <span id="grand-total">₱0</span>
+                </div>
+
+            </div>
+
+            <div class="checkout-card">
+
+                <h3>🚚 Delivery Info</h3>
+
+                <p>Estimated Delivery:</p>
+
+                <strong>15 - 20 Minutes</strong>
+
+                <br><br>
+
+                <p>
+                    Freshly cooked fries delivered hot & crispy ❤️
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
