@@ -1104,16 +1104,25 @@ body{
     font-weight:700;
 }
 
+.success-right{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:35px;
+}
+
 .order-summary,
 .details-card,
 .tracking-card{
-    background:rgba(255,255,255,0.9);
+    background:rgba(255,255,255,0.92);
 
-    border-radius:25px;
+    border-radius:28px;
 
-    padding:30px;
+    padding:38px;
 
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    box-shadow:0 8px 24px rgba(0,0,0,0.1);
 }
 
 .summary-card h3,
