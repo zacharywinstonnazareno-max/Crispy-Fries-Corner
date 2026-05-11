@@ -26,106 +26,106 @@
 
     </nav>
 
-<section class="success-wrapper">
+    <section class="success-wrapper">
 
-    <div class="success-left">
+        <div class="success-left">
 
-        <img src="images/success.png" class="success-image">
+            <img src="images/success.png" class="success-image">
 
-        <h2>Order Successfully Placed!</h2>
+            <h2>Order Successfully Placed!</h2>
 
-        <p>
-            Thank you! Your fries are being prepared.
-        </p>
+            <p>
+                Thank you! Your fries are being prepared.
+            </p>
 
-        <p>
-            You will receive your order soon 🍟
-        </p>
+            <p>
+                You will receive your order soon 🍟
+            </p>
 
-        <div class="delivery-box">
-            <h3>Estimated Delivery Time</h3>
-            <p>15 - 20 Minutes</p>
-        </div>
+            <div class="delivery-box">
+                <h3>Estimated Delivery Time</h3>
+                <p>15 - 20 Minutes</p>
+            </div>
 
-        <img src="images/logo.png" class="success-logo">
+            <img src="images/logo.png" class="success-logo">
 
-        <a href="#" class="back-btn"
-onclick="finishOrder()">
-            BACK TO MENU
-        </a>
-
-    </div>
-
-    <div class="details-card">
-
-            <h3>Delivery Details</h3>
-
-            <p id="customer-name"></p>
-
-            <p id="customer-address"></p>
-
-            <p id="customer-number"></p>
-
-            <hr>
-
-            <h3>Payment Method</h3>
-
-            <p>💵 Cash on Delivery</p>
+            <a href="#" class="back-btn"
+            onclick="finishOrder()">
+                BACK TO MENU
+            </a>
 
         </div>
 
+        <div class="success-right">
 
-        <div class="tracking-card">
+            <div class="summary-card">
 
-            <h3>Track Your Order</h3>
+                <h3>Order Summary</h3>
 
-            <div class="tracking-steps">
+                <div id="success-summary"></div>
 
-                <div class="step active">
-                    ✅
-                    <p>Placed</p>
+                <hr>
+
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span id="success-total">₱0</span>
                 </div>
 
-                <div class="step active">
-                    🍟
-                    <p>Preparing</p>
-                </div>
+            </div>
 
-                <div class="step">
-                    🛵
-                    <p>Out for Delivery</p>
-                </div>
+            <div class="details-card">
 
-                <div class="step">
-                    📦
-                    <p>Delivered</p>
+                <h3>Delivery Details</h3>
+
+                <p id="customer-name"></p>
+
+                <p id="customer-address"></p>
+
+                <p id="customer-number"></p>
+
+                <hr>
+
+                <h3>Payment Method</h3>
+
+                <p>💵 Cash on Delivery</p>
+
+            </div>
+
+            <div class="tracking-card">
+
+                <h3>Track Your Order</h3>
+
+                <div class="tracking-steps">
+
+                    <div class="step active">
+                        ✅
+                        <p>Placed</p>
+                    </div>
+
+                    <div class="step active">
+                        🍟
+                        <p>Preparing</p>
+                    </div>
+
+                    <div class="step">
+                        🛵
+                        <p>Out for Delivery</p>
+                    </div>
+
+                    <div class="step">
+                        📦
+                        <p>Delivered</p>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-    <div class="success-right">
-
-        <div class="summary-card">
-
-            <h3>Order Summary</h3>
-
-            <div id="success-summary"></div>
-
-<hr>
-
-<div class="summary-item total">
-    <span>Total</span>
-    <span id="success-total">₱0</span>
-</div>
-
-</section>
-   
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
