@@ -1124,6 +1124,14 @@ body{
 
     box-shadow:0 8px 24px rgba(0,0,0,0.1);
 }
+.details-card p{
+    margin:16px 0;
+    font-size:20px;
+}
+
+.tracking-card{
+    padding-bottom:45px;
+}
 
 .summary-card h3,
 .details-card h3,
