@@ -327,3 +327,25 @@ function goToPage(page){
 
     }, 500);
 }
+function updateCheckoutTotal(){
+
+    const totalItems =
+        document.getElementById("total-items");
+
+    const grandTotal =
+        document.getElementById("grand-total");
+
+    if(!totalItems || !grandTotal) return;
+
+    let total = 0;
+
+    cart.forEach(item => {
+        total += item.price;
+    });
+
+    totalItems.innerHTML = cart.length;
+
+    grandTotal.innerHTML = `₱${total + 40}`;
+}
+
+updateCheckoutTotal();
